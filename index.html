@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FormValidator</title>
+
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="https://placeimg.com/1000/1000/people">
+        </div>
+        <div class="rightside">
+            <h1>Crie sua Conta</h1>
+            <form method="POST" class="b7validator">
+                <label for="">Seu Nome: <br>
+                    <input type='text' name="name" data-rules = "required|min=6"/>
+                </label>
+                <label for="">Seu Email: <br>
+                    <input type='email' name="email" data-rules = "required|email"/>
+                </label>
+                <label for="">Sua Senha: <br>
+                    <input type='password' name="password" data-rules = "required|password|min=8"/>
+                </label>
+                <label for="">
+                    <input type='submit' value="Cadastrar"/>
+                </label>
+
+            </form>
+
+            <diV>
+               Já tem uma conta?  <a href="#"> Faça seu Login!</a>
+            </diV>
+        </div>
+    </div>
+
+    <script src="formValidator.js"></script>
+</body>
+</html>
